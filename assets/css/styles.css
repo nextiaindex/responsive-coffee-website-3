@@ -167,7 +167,7 @@ img {
 @media screen and (max-width: 1150px){
 	.nav__menu {
 		position: fixed;
-		top: 0;
+		top: -120%;
 		left: 0;
 		background-color: var(--body-color);
 		width: 100%;
@@ -202,23 +202,218 @@ img {
 }
 
 /* Show menu */
-
+.show-menu {
+	top: 0;
+}
 
 /* Add shadow header */
+.shadow-header {
+	box-shadow: 0 4px 16px hsla(166, 85%, 8%, .3);
+}
 
 
 /* Active link */
 
 
 /*=============== HOME ===============*/
+.home__container {
+	position: relative;
+	padding-top: 3rem;
+	row-gap: 0;
+}
 
+.home__title {
+	color: var(--white-color);
+	font-size: var(--biggest-font-size);
+	font-weight: var(--font-semi-bold);
+	text-align: center;
+}
+
+.home__images {
+	position: relative;
+	display: grid;
+	justify-items: center;
+	justify-self: center;
+}
+
+.home__shape {
+	width: 280px;
+	height: 280px;
+	background-color: var(--first-color);
+	border-radius: 50%;
+	clip-path: inset(50% 0 0 0);
+}
+
+.home__images img {
+	position: absolute;
+}
+
+.home__coffee {
+	width: 160px;
+	top: -3.5rem;
+	rotate: 10deg;
+	left: -3rem;
+	bottom: .5rem;
+}
+
+.home__splash {
+	max-width: initial;
+	width: 350px;
+}
+
+.home__bean-1,
+.home__bean-2 {
+	width: 40px;
+}
+
+.home__bean-1 {
+	left: 1.5rem;
+	top: 1.5rem;
+}
+
+.home__bean-2 {
+	right: 3.5rem;
+	bottom: 6.5rem;
+	rotate: -90deg;
+	filter: blur(2px);
+}
+
+.home__ice-1 {
+	width: 50px;
+	left: 1.5rem;
+	bottom: 3rem;
+}
+
+.home__ice-2 {
+	width: 40px;
+	top: 4rem;
+	right: 1.25rem;
+	rotate: 60deg;
+}
+
+.home__leaf {
+	width: 50px;
+	right: 6rem;
+	bottom: -1rem;
+	rotate: -15deg;
+}
+
+.home__sticker {
+	position: absolute;
+	width: 50px;
+	right: .5rem;
+	top: 29rem;
+	rotate: 15deg;
+}
+
+.home__data {
+	margin-top: 2.5rem;
+	text-align: center;
+}
+
+.home__description {
+	color: var(--white-color);
+	margin-bottom: 1.5rem;
+}
 
 /*=============== BUTTON ===============*/
+.button {
+	display: inline-flex;
+	justify-content: center;
+	background-color: var(--first-color);
+	color: var(--white-color);
+	padding: 1rem 2rem;;
+	font-weight: var(--font-semi-bold);
+	transition: background .4s, box-shadow .4s;
+}
 
+.button:hover {
+	background-color: var(--first-color-alt);
+	box-shadow: 0 8px 24px hsla(166, 85%, 8%, .2);
+}
+
+.button-dark {
+	background-color: var(--dark-color);
+}
+
+.button-dark:hover{
+	background-color: var(--dark-color);
+}
 
 /*=============== POPULAR ===============*/
+.popular {
+	background-color: var(--body-white-color);
+}
 
+.popular .section__title {
+	color: var(--title-color);
+}
 
+.popular__swiper {
+	padding-top: 1.5rem;
+}
+
+.popular__card {
+	width: 270px;
+	display: grid;
+	row-gap: 1.5rem;
+}
+
+.popular__images {
+	position: relative;
+	display: grid;
+	justify-items: center;
+	justify-self: center;
+}
+
+.popular__shape {
+	width: 195px;
+	height: 195px;
+	background-color: var(--first-color);
+	border-radius: 50%;
+	clip-path: inset(50% 0 0 0);
+}
+
+.popular__images img {
+	position: absolute;
+}
+
+.popular__coffee {
+	width: 130px;
+}
+
+.popular__bean-1{
+	width: 30px;
+	top: 3rem;
+	left: .5rem;
+	transition: transform .5 .1s;
+}
+
+.popular__bean-2 {
+	width: 20px;
+	right: 2rem;
+	bottom: 2rem;
+	rotate: 75deg;
+	filter: blur(1px);
+	transition: transform .5s .1s;
+}
+
+.popular__name {
+	font-size: var(--h1-font-size);
+	color: var(--title-color);
+	margin-bottom: .5rem;
+}
+
+.popular__description {
+	margin-bottom: 1.5rem;
+}
+
+.popular__card:hover .popular__bean-1 {
+	transform: translate(-.5rem, -.25rem);
+}
+.popular__card:hover .popular__bean-2 {
+	transform: translate(-.5rem, -.25rem);
+}
 /* Swiper class */
 
 

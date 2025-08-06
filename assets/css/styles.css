@@ -164,6 +164,7 @@ img {
 	font-size: 1.5rem;
 	cursor: pointer;
 }
+
 /* Navigation for mobile devices */
 @media screen and (max-width: 1150px){
 	.nav__menu {
@@ -256,13 +257,14 @@ img {
 	width: 160px;
 	top: -3.5rem;
 	rotate: 10deg;
-	left: -3rem;
-	bottom: .5rem;
 }
 
 .home__splash {
 	max-width: initial;
 	width: 350px;
+	rotate: 10deg;
+	left: -3rem;
+	bottom: .5rem;
 }
 
 .home__bean-1,
@@ -326,9 +328,10 @@ img {
 	justify-content: center;
 	background-color: var(--first-color);
 	color: var(--white-color);
-	padding: 1rem 2rem;;
+	padding: 1rem 2rem;
 	font-weight: var(--font-semi-bold);
 	transition: background .4s, box-shadow .4s;
+	border-radius: .5rem;
 }
 
 .button:hover {

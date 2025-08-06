@@ -1093,7 +1093,6 @@ img {
 	}
 	.contact__title {
 		font-size: var(--h2-font-size);
-		margin-bottom: 1rem;
 		color: var(--white-color);
 	}
 	.contact__social {

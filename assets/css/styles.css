@@ -387,13 +387,14 @@ img {
 
 .popular__coffee {
 	width: 130px;
+	top: -1.5rem;
 }
 
-.popular__bean-1{
+.popular__bean-1 {
 	width: 30px;
 	top: 3rem;
 	left: .5rem;
-	transition: transform .5 .1s;
+	transition: transform .5s .1s;
 }
 
 .popular__bean-2 {
@@ -403,6 +404,10 @@ img {
 	rotate: 75deg;
 	filter: blur(1px);
 	transition: transform .5s .1s;
+}
+
+.popular__data {
+	text-align: center;
 }
 
 .popular__name {
@@ -493,7 +498,9 @@ img {
 }
 
 .products__container {
+	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
 }
 
 .products__card {

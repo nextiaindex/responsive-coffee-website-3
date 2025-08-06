@@ -1,5 +1,5 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-nemu'),
+const navMenu = document.getElementById('nav-menu'),
 	navToggle = document.getElementById('nav-toggle'),
 	navClose = document.getElementById('nav-close')
 
@@ -10,7 +10,7 @@ if(navToggle){
 }
 
 if(navClose){
-	navClose.addEventListener(click, () =>{
+	navClose.addEventListener('click', () =>{
 		navMenu.classList.remove('show-menu')
 	})
 }
